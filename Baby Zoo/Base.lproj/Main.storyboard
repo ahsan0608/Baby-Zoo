@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Baby_Zoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="154" sectionHeaderHeight="28" sectionFooterHeight="28" id="1kD-b3-iLE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAnimal" rowHeight="154" id="xYa-IW-Yab" customClass="TVCAnimal" customModule="ZooApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="154"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xYa-IW-Yab" id="8fX-WX-PBp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwy-Pb-IXj">
+                                            <rect key="frame" x="8" y="8" width="398" height="138"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qof-XC-Pee">
+                                                    <rect key="frame" x="122" y="11" width="268" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6pa-FH-NiX">
+                                                    <rect key="frame" x="122" y="36" width="268" height="94"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="94" id="cYq-RJ-Xnr"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baboon" translatesAutoresizingMaskIntoConstraints="NO" id="4Pa-i5-rHN">
+                                                    <rect key="frame" x="8" y="11" width="110" height="115"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="Ofv-gZ-5xY"/>
+                                                        <constraint firstAttribute="width" constant="110" id="Te2-KX-xGv"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="4Pa-i5-rHN" firstAttribute="leading" secondItem="Dwy-Pb-IXj" secondAttribute="leading" constant="8" id="2DI-Rp-ls8"/>
+                                                <constraint firstItem="6pa-FH-NiX" firstAttribute="trailing" secondItem="qof-XC-Pee" secondAttribute="trailing" id="AZA-MN-hx2"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Pa-i5-rHN" secondAttribute="bottom" constant="12" id="EoW-uM-6rO"/>
+                                                <constraint firstItem="qof-XC-Pee" firstAttribute="leading" secondItem="4Pa-i5-rHN" secondAttribute="trailing" constant="4" id="LIJ-PW-J4Z"/>
+                                                <constraint firstItem="4Pa-i5-rHN" firstAttribute="top" secondItem="Dwy-Pb-IXj" secondAttribute="top" constant="11" id="Mbl-sU-ofe"/>
+                                                <constraint firstAttribute="trailing" secondItem="qof-XC-Pee" secondAttribute="trailing" constant="8" id="T2d-Zh-Ncx"/>
+                                                <constraint firstItem="6pa-FH-NiX" firstAttribute="leading" secondItem="qof-XC-Pee" secondAttribute="leading" id="dcw-Qz-2r8"/>
+                                                <constraint firstItem="qof-XC-Pee" firstAttribute="top" secondItem="Dwy-Pb-IXj" secondAttribute="top" constant="11" id="eo9-4J-I2c"/>
+                                                <constraint firstItem="6pa-FH-NiX" firstAttribute="top" secondItem="qof-XC-Pee" secondAttribute="bottom" constant="4" id="rdy-qA-MX9"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Dwy-Pb-IXj" secondAttribute="trailing" constant="8" id="87H-wa-37o"/>
+                                        <constraint firstItem="Dwy-Pb-IXj" firstAttribute="leading" secondItem="8fX-WX-PBp" secondAttribute="leading" constant="8" id="usk-3W-gI9"/>
+                                        <constraint firstAttribute="bottom" secondItem="Dwy-Pb-IXj" secondAttribute="bottom" constant="8" id="xrH-dd-Klx"/>
+                                        <constraint firstItem="Dwy-Pb-IXj" firstAttribute="top" secondItem="8fX-WX-PBp" secondAttribute="top" constant="8" id="zaE-hb-Tv8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="ivAnimalImage" destination="4Pa-i5-rHN" id="wW4-81-Xo7"/>
+                                    <outlet property="laAnimalDes" destination="6pa-FH-NiX" id="gUb-uj-QTU"/>
+                                    <outlet property="laAnimalName" destination="qof-XC-Pee" id="KuB-VG-vqz"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <connections>
+                        <outlet property="tvListAnimals" destination="1kD-b3-iLE" id="AiZ-PH-CtZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-57" y="103"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="baboon" width="100" height="100"/>
+    </resources>
 </document>

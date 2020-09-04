@@ -13,6 +13,8 @@
 		7892CCAD250010610079BE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7892CCAB250010610079BE6A /* Main.storyboard */; };
 		7892CCAF250010630079BE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7892CCAE250010630079BE6A /* Assets.xcassets */; };
 		7892CCB2250010630079BE6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7892CCB0250010630079BE6A /* LaunchScreen.storyboard */; };
+		7892CCBA250010E50079BE6A /* TVCAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892CCB9250010E50079BE6A /* TVCAnimal.swift */; };
+		7892CCBE2500130F0079BE6A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892CCBD2500130F0079BE6A /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7892CCAE250010630079BE6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7892CCB1250010630079BE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7892CCB3250010630079BE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7892CCB9250010E50079BE6A /* TVCAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCAnimal.swift; sourceTree = "<group>"; };
+		7892CCBD2500130F0079BE6A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		7892CC99250010610079BE6A = {
 			isa = PBXGroup;
 			children = (
+				7892CCBD2500130F0079BE6A /* Animal.swift */,
 				7892CCA4250010610079BE6A /* Baby Zoo */,
 				7892CCA3250010610079BE6A /* Products */,
 			);
@@ -60,6 +65,7 @@
 				7892CCA7250010610079BE6A /* SceneDelegate.swift */,
 				7892CCA9250010610079BE6A /* ViewController.swift */,
 				7892CCAB250010610079BE6A /* Main.storyboard */,
+				7892CCB9250010E50079BE6A /* TVCAnimal.swift */,
 				7892CCAE250010630079BE6A /* Assets.xcassets */,
 				7892CCB0250010630079BE6A /* LaunchScreen.storyboard */,
 				7892CCB3250010630079BE6A /* Info.plist */,
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7892CCAA250010610079BE6A /* ViewController.swift in Sources */,
+				7892CCBA250010E50079BE6A /* TVCAnimal.swift in Sources */,
 				7892CCA6250010610079BE6A /* AppDelegate.swift in Sources */,
 				7892CCA8250010610079BE6A /* SceneDelegate.swift in Sources */,
+				7892CCBE2500130F0079BE6A /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
